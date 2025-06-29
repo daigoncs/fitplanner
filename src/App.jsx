@@ -1,18 +1,18 @@
-import { Route, Router, Routes } from "react-router-dom";
+import { Route, BrowserRouter, Routes } from "react-router-dom";
 import "./App.css"
 import Login from "./Components/Login/Login";
 import Dashboard from "./Components/Dashboard/Dashboard";
-import Register from "./Components/Cadastro/Cadastro";
+import Register from "./Components/Register/Register";
 function App() {
 
   return (
-    <Router>
+    <BrowserRouter>
       <Routes>
         <Route path="/" element={<Login />} />
-        <Route path="/cadastro" element={<Register />} />
+        <Route path="/register" element={<Register />} />
         <Route path="/dashboard" element={<Dashboard />} />
       </Routes>
-    </Router>
+    </BrowserRouter>
   )
 }
 

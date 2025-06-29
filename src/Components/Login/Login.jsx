@@ -2,8 +2,8 @@
 import { useState } from "react";
 import { FaUser, FaLock } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
-import { signInWithEmailAndPassword, auth } from "firebase/auth";
-
+import { auth } from "../../src/firebaseConfig";
+import { signInWithEmailAndPassword } from "firebase/auth";
 
 function Login() {
     const [email, setEmail] = useState("");
@@ -38,7 +38,7 @@ function Login() {
             </div>
             <div>
                 <p>
-                Não possui cadastro?  <a href="/cadastro">Criar conta</a>
+                Não possui cadastro?  <a href="/register">Criar conta</a>
                 </p>
             </div>
         </form>
